@@ -8,15 +8,15 @@ module fan::fan {
 
     fun init(witness: FAN, ctx: &mut TxContext) {
         // Create the URL for the token metadata
-        let url = new_unsafe_from_bytes(b"https://assets.artistfirst.in/uploads/1739278732222-FanTV-TokenFinal.jpg");
+        let url = new_unsafe_from_bytes(b"https://assets.artistfirst.in/uploads/1739285069781-fan_token.png");
 
         // Create the new currency using the witness and context
         let (mut treasury_cap, meta_data) = coin::create_currency<FAN>(
             witness,               // Pass the witness by reference
             9,                     // Decimal places
             b"FAN",                // Symbol
-            b"FANTV",                // Name
-            b"FANTV ON SUI", // short description
+            b"FanTV",                // Name
+            b"FAN is the native token of FanTV Platform", // short description
             option::some(url),     // Metadata URL
             ctx                    // Transaction context
         );
