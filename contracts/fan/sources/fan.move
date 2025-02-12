@@ -15,7 +15,7 @@ module fan::fan {
             witness,               // Pass the witness by reference
             9,                     // Decimal places
             b"FAN",                // Symbol
-            b"FanTV",                // Name
+            b"FanTV AI",                // Name
             b"FAN is the native token of FanTV Platform", // short description
             option::some(url),     // Metadata URL
             ctx                    // Transaction context
