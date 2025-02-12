@@ -8,7 +8,7 @@ module fan::fan {
 
     fun init(witness: FAN, ctx: &mut TxContext) {
         // Create the URL for the token metadata
-        let url = new_unsafe_from_bytes(b"https://assets.artistfirst.in/uploads/1739285069781-fan_token.png");
+        let url = new_unsafe_from_bytes(b"https://assets.artistfirst.in/uploads/1739349932784-FAN_logo.png");
 
         // Create the new currency using the witness and context
         let (mut treasury_cap, meta_data) = coin::create_currency<FAN>(
